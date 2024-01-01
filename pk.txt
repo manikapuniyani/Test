@@ -1,2 +1,38 @@
-text file.
-jdbgfjyrvehdcvjhb
+git config user.name "Manika Puniyani"
+git config user.email "manikapuniyani@gmail.com"
+cd <folder name from where you want to push the code>
+
+push commands:
+
+1.git init   (initialize a local repository in a folder)
+2.git add .    (add or move into staging all the files in the current directory and if only only one file,give only file name{git add pk.txt})
+3.git commit -m "<message you want to pass>"
+4.git remote add origin https://github.com/manikapuniyani/Test.git      (give the repository url here from github, this command will connect remote repo to local repo)
+5.git push -u origin master     (to push code to master branch)
+  
+
+to create a new branch:
+1.git checkout master    (it is imp to switch to master branch if u want to create a new branch)
+2.git branch -m master <branch_name>     (it will create branch over master branch with the given name)
+3.git push -u origin <branch_name>       (it will push all the code from master to given branch)
+
+if you want to make changes in a given branch:
+1.git checkout <branch_name>     (it will switch to the given branch)
+2.git add .
+3.git commit -m "<message>"
+4.git push    (push the code to the branch you are in)
+5.git push -u origin master     (to push code to master branch)
+
+
+pull command:
+1.git clone https://github.com/manikapuniyani/Test.git           (take code from github and will clone remote repo in local repo)
+2.cd <repo_name>
+3.git checkout <branch_name> 
+4.git pull
+5.git pull origin master
+and if you make changes then push the changes
+1.git add .
+2.git commit -m "<message>"
+3.git push
+
+then go in github ui and crete a pull request.after that when pull req is approved,then go for merge request with master branch.
